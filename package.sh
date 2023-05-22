@@ -1,0 +1,1 @@
+zip -r wp-vue-spa-starter.zip *.php *.css assets

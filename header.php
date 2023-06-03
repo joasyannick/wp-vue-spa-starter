@@ -7,7 +7,7 @@
                 $favicon_id = (int) get_option( 'site_icon' );
                 echo esc_url(
                         $favicon_id?
-                            wp_get_attachment_image_url( $site_icon_id, 'full' ):
+                            wp_get_attachment_image_url( $favicon_id, 'full' ):
                             get_template_directory_uri() . '/assets/favicon.ico'
                     );
             ?>"/>

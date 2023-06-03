@@ -11,7 +11,7 @@ export default {
     }
   },
   created() {
-    fetch(window.location.origin + import.meta.env.VITE_BASE_ROUTE + 'wp-json/vue-spa-starter/v1/logo')
+    fetch(import.meta.env.VITE_WP_REST_URL + 'vue-spa-starter/v1/logo')
       .then(response => response.json())
       .then(data => this.logo = data);
   },
